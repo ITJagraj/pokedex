@@ -20,10 +20,10 @@ const fetchPokemon = () => {
 const displayPokemon = (pokemon) => {
     console.log(pokemon);
     const pokemonHtmalString = pokemon.map ( pokemon => `
-    <li>
-    <img src = "${pokemon.image}"
-    <h2>${pokemon.id}. ${pokemon.name}</h2>
-    <p>Type: ${pokemon.type}</p>
+    <li class= "card">
+    <img class= "card-image" src = "${pokemon.image}"
+    <h2 class= "card-title">${pokemon.id}. ${pokemon.name}</h2>
+    <p card= "card-subtitle">Type: ${pokemon.type}</p>
     </li>
     `)
     .join('')
