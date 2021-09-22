@@ -21,9 +21,9 @@ const displayPokemon = (pokemon) => {
     console.log(pokemon);
     const pokemonHtmalString = pokemon.map ( pokemon => `
     <li class= "card">
-    <img class= "card-image" src = "${pokemon.image}"
+    <img class= "card-image" src = "${pokemon.image}"/>
     <h2 class= "card-title">${pokemon.id}. ${pokemon.name}</h2>
-    <p card= "card-subtitle">Type: ${pokemon.type}</p>
+    <p class= "card-subtitle">Type: ${pokemon.type}</p>
     </li>
     `)
     .join('')
